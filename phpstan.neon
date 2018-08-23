@@ -23,6 +23,7 @@ parameters:
         - '#Call to an undefined method Cake\\Auth\\Storage\\StorageInterface::setConfig\(\)#'
         - '#Variable \$_SESSION in isset\(\) always exists and is not nullable#'
         - '#Call to an undefined method PHPUnit\\Framework\\MockObject\\MockObject#'
+        - '#Access to an undefined static property Cake\\Mailer\\Email::\$_dsnClassMap#'
     earlyTerminatingMethodCalls:
         Cake\Shell\Shell:
             - abort

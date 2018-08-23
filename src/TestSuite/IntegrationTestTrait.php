@@ -382,7 +382,7 @@ trait IntegrationTestTrait
      *
      * @param string|array $url The URL to request.
      * @return void
-     * @throws \PHPUnit\Exception
+     * @throws \PHPUnit\Exception\Throwable
      */
     public function get($url): void
     {
@@ -399,7 +399,7 @@ trait IntegrationTestTrait
      * @param string|array $url The URL to request.
      * @param array $data The data for the request.
      * @return void
-     * @throws \PHPUnit\Exception
+     * @throws \PHPUnit\Exception|\Throwable
      */
     public function post($url, $data = []): void
     {
@@ -416,7 +416,7 @@ trait IntegrationTestTrait
      * @param string|array $url The URL to request.
      * @param array $data The data for the request.
      * @return void
-     * @throws \PHPUnit\Exception
+     * @throws \PHPUnit\Exception|\Throwable
      */
     public function patch($url, $data = []): void
     {
@@ -433,7 +433,7 @@ trait IntegrationTestTrait
      * @param string|array $url The URL to request.
      * @param array $data The data for the request.
      * @return void
-     * @throws \PHPUnit\Exception
+     * @throws \PHPUnit\Exception|\Throwable
      */
     public function put($url, $data = []): void
     {
@@ -449,7 +449,7 @@ trait IntegrationTestTrait
      *
      * @param string|array $url The URL to request.
      * @return void
-     * @throws \PHPUnit\Exception
+     * @throws \PHPUnit\Exception|\Throwable
      */
     public function delete($url): void
     {
@@ -465,7 +465,7 @@ trait IntegrationTestTrait
      *
      * @param string|array $url The URL to request.
      * @return void
-     * @throws \PHPUnit\Exception
+     * @throws \PHPUnit\Exception|\Throwable
      */
     public function head($url): void
     {
@@ -481,7 +481,7 @@ trait IntegrationTestTrait
      *
      * @param string|array $url The URL to request.
      * @return void
-     * @throws \PHPUnit\Exception
+     * @throws \PHPUnit\Exception|\Throwable
      */
     public function options($url): void
     {
@@ -497,7 +497,7 @@ trait IntegrationTestTrait
      * @param string $method The HTTP method
      * @param array|null $data The request data.
      * @return void
-     * @throws \PHPUnit\Exception
+     * @throws \PHPUnit\Exception|\Throwable
      */
     protected function _sendRequest($url, $method, $data = []): void
     {
